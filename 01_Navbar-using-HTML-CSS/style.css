@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.8s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkblue;
+  color: whitesmoke;
+  line-height: 5rem;
+  height: 12vh;
+}
+
+nav .left h1 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .right ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+li {
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+#toggleBtn {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  float: right;
+  color: wheat;
+  line-height: 80px;
+}
+
+#checkbox {
+  display: none;
+  height: 10vh;
+}
+
+nav .right ul li:hover {
+  background-color: whitesmoke;
+  color: darkblue;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 650px) {
+
+  #toggleBtn{
+    display: block;
+  }
+ 
+  #nav-list{
+    width: 100vw;
+    height: 88vh;
+    position: fixed;
+    top: 100%;
+    background-color: darkblue;
+    left: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #checkbox{
+    display: none;
+  }
+
+  #checkbox:checked ~ ul{
+    top: 10%;
+    left: 0;
+  }
+}

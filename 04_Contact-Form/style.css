@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all ease-out .3s;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input,
+button,
+textarea {
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  background: whitesmoke;
+  border-radius: 0.4rem;
+  font-family: cursive
+}
+
+label {
+  font-family: "Arial";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  width: 35vw;
+  max-width: 900px;
+  min-width: 400px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-in {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.label i:hover{
+    /* background-color: red; */
+    color: darkblue;
+}
+
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin: 0 auto;
+    cursor: pointer;
+}

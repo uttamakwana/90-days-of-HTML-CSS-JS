@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(13, 13, 114, 0.5);
+}
+
+main {
+  border: 1px solid white;
+  width: 25%;
+  padding: 2rem;
+  background: rgba(13, 13, 114, 0.562);
+}
+
+main h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+input,
+button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: rgba(13, 13, 114, 0.562);
+}
+
+input:focus {
+  animation-name: colorCycle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorCycle {
+  0% {
+    border-color: green;
+    color: green;
+  }
+
+  20% {
+    border-color: red;
+    color: red;
+  }
+
+  40% {
+    border-color: darkblue;
+    color: darkblue;
+  }
+
+  60% {
+    border-color: yellow;
+    color: yellow;
+  }
+
+  80% {
+    border-color: purple;
+    color: purple;
+  }
+
+  100% {
+    border-color: white;
+    color: white;
+  }
+}
+
+.container button {
+  margin: 0 auto;
+  width: 25%;
+  border-radius: 0.25rem;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="form-container">
+      <form class="form">
+        <div class="form-title">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="form-input-container">
+          <div class="form-in">
+            <div class="label">
+              <label for="name">Name</label
+              ><!-- <i class="fa-solid fa-circle-info"></i> -->
+            </div>
+            <input type="text" id="name" pattern="[a-zA-Z]" title="should not contain numbers"/>
+          </div>
+          <div class="form-in">
+            <div class="label">
+              <label for="email">Email</label
+              ><!-- <i class="fa-solid fa-circle-info"></i> -->
+            </div>
+            <input type="email" id="email" pattern="[a-zA-Z0-9+@+a-z._-+a-z]"/>
+          </div>
+          <div class="form-in">
+            <div class="label">
+              <label for="phone-number">Number</label
+              ><!-- <i class="fa-solid fa-circle-info"></i> -->
+            </div>
+            <input type="tel" id="number" />
+          </div>
+          <div class="form-in">
+            <div class="label">
+              <label for="coupen-code"> Coupen Code </label
+              ><!-- <i class="fa-solid fa-circle-info"></i> -->
+            </div>
+            <input type="text" id="coupen" />
+          </div>
+          <div class="form-in">
+            <div class="label">
+              <label for="comment">Comment</label
+              ><!-- <i class="fa-solid fa-circle-info"></i> -->
+            </div>
+            <textarea id="comment" cols="30" rows="10"></textarea>
+          </div>
+          <div class="form-in">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
