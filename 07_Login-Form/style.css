@@ -25,8 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 25rem;
-  width: 75vw;
+  max-width: 30rem;
+  width: 60vw;
 }
 
 .form-input-container {
