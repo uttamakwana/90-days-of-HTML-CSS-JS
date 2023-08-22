@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+
+body {
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 500px;
+  width: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  height: 500px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: all ease 0.6s;
+}
+
+.card-content {
+  position: absolute;
+  background-color: black;
+  bottom: -28%;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: all ease 0.6s;
+}
+
+.card-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-content button {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-content {
+  bottom: 0;
+}
+
+.card:hover .img {
+  scale: 1.085;
+  rotate: -1deg;
+}
