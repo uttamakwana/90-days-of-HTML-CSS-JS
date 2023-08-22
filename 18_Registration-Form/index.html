@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="form">
+        <h1>Registration Form</h1>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <span class="show-password" id="password-show">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/see-no-evil-monkey.png"
+              alt="see-no-evil-monkey"
+            />
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/speak-no-evil-monkey.png"
+              alt="speak-no-evil-monkey"
+              style="display: none"
+            />
+          </span>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+          />
+          <span class="show-password" id="confirm-password-show">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/see-no-evil-monkey.png"
+              alt="see-no-evil-monkey"
+            />
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/emoji/48/speak-no-evil-monkey.png"
+              alt="speak-no-evil-monkey"
+              style="display: none"
+            />
+          </span>
+        </div>
+        <div class="form-group">
+          <button>Register</button>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    const password = document.querySelector("#password");
+    const confirmPassword = document.querySelector("#confirm-password");
+    const passwordShow = document.querySelector("#password-show");
+    const confirmPasswordShow = document.querySelector(
+      "#confirm-password-show"
+    );
+
+    passwordShow.addEventListener("click", () => {
+      password.type = password.type === "password" ? "text" : "password";
+      togglePasswordImage(passwordShow);
+    });
+
+    confirmPasswordShow.addEventListener("click", () => {
+      confirmPassword.type =
+        confirmPassword.type === "password" ? "text" : "password";
+      togglePasswordImage(confirmPasswordShow);
+    });
+
+    function togglePasswordImage(container) {
+      const images = container.querySelectorAll("img");
+      images.forEach((image) => {
+        image.style.display =
+          image.style.display === "none" ? "inline" : "none";
+      });
+    }
+  </script>
+</html>
